@@ -3,63 +3,9 @@
 
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-<meta http-equiv='Content-Script-Type' content='text/javascript'>
 <meta http-equiv='Content-Style-Type' content='text/css'>
 <meta name='author' content='Yuki Naito'>
 <title>difff - text compare</title>
-<script type='text/javascript'>
-<!--
-	function hideForm() {
-		if (document.getElementById('form').style.display == 'none') {
-			document.getElementById('top' ).style.display = 'block';
-			document.getElementById('form').style.display = 'block';
-			document.getElementById('save').style.display = 'block';
-			document.getElementById('hide').value = 'Hide form (print friendly)';
-		} else {
-			document.getElementById('top' ).style.display = 'none';
-			document.getElementById('form').style.display = 'none';
-			document.getElementById('save').style.display = 'none';
-			document.getElementById('hide').value = 'Show all';
-		}
-	}
-	function setColor1() {
-		document.getElementById('top').style.borderTop = '5px solid #00BBFF';
-		var emList = document.getElementsByTagName('em');
-		for (i = 0; i < emList.length; i++) {
-			emList[i].className = 'blue' ;
-		}
-	}
-	function setColor2() {
-		document.getElementById('top').style.borderTop = '5px solid #00bb00';
-		var emList = document.getElementsByTagName('em');
-		for (i = 0; i < emList.length; i++) {
-			emList[i].className = 'green' ;
-		}
-	}
-	function setColor3() {
-		document.getElementById('top').style.borderTop = '5px solid black';
-		var emList = document.getElementsByTagName('em');
-		for (i = 0; i < emList.length; i++) {
-			emList[i].className = 'black' ;
-		}
-	}
-	function savehtml() {
-		var element1 = document.createElement('input');
-		element1.setAttribute('type', 'hidden');
-		element1.setAttribute('name', 'sequenceA');
-		element1.setAttribute('value', document.difff.sequenceA.value);
-		document.save.appendChild(element1);
-
-		var element2 = document.createElement('input');
-		element2.setAttribute('type', 'hidden');
-		element2.setAttribute('name', 'sequenceB');
-		element2.setAttribute('value', document.difff.sequenceB.value);
-		document.save.appendChild(element2);
-
-		return confirm('Are you shure you want to publish this page?\n[OK] : Publish and move to the created public link.');
-	}
-//-->
-</script>
 <style type='text/css'>
 <!--
 	* { font-family:verdana,arial,helvetica,sans-serif }
@@ -104,10 +50,6 @@
 <font size=1 style='vertical-align:16px'>
 	English |
 	<a href='https://difff.jp/en/../'>Japanese</a>
-</font>
-&emsp;
-<font size=1 style='vertical-align:16px'>
-<a href='https://difff.jp/en/../v5/index_en.html'>Previous release (ver.5)</a>
 </font>
 <hr><!-- ________________________________________ -->
 </div>
